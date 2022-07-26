@@ -1,30 +1,56 @@
 import { lazy } from 'react';
 
-const lazyLoadComponent = (path) => {
-	return lazy(() => import(`../pages/${path}/index.jsx`));
+const lazyLoadComponent = (path, pathChildren = 'index') => {
+  return lazy(() => import(`../pages/${path}/${pathChildren}.jsx`));
 };
 
 const routes = [
-	{
-		path: '/',
-		name: 'HomePage',
-		hidden: false,
-		component: lazyLoadComponent('HomePage'),
-		child: [],
-	},
-	{
-		path: '/react-hooks-form',
-		name: 'FormPage',
-		hidden: false,
-		component: lazyLoadComponent('FormPage'),
-		child: [],
-	},
-	{
-		path: '*',
-		name: 'NotFoundPage',
-		hidden: true,
-		component: lazyLoadComponent('404Page'),
-	},
+  {
+    path: '/',
+    name: 'Home Page',
+    keyName: 'HOME_PAGE',
+    hidden: false,
+    component: lazyLoadComponent('HomePage'),
+    children: [],
+  },
+  {
+    path: '/react-hooks-form',
+    name: 'Form Page',
+    keyName: 'FORM_PAGE',
+    hidden: false,
+    component: lazyLoadComponent('FormPage'),
+    children: [],
+  },
+  {
+    path: '/react-hooks',
+    name: 'Hooks Page',
+    keyName: 'HOOKS_PAGE',
+    hidden: false,
+    component: lazyLoadComponent('HooksPage'),
+    children: [
+      {
+        path: 'use-ref',
+        name: 'Use Ref Page',
+        keyName: 'USE_REF_PAGE',
+        hidden: false,
+        component: lazyLoadComponent('HooksPage', 'UseRefPage'),
+      },
+      {
+        path: 'use-imperative-handle',
+        name: 'Use Imperative Handle Page',
+        keyName: 'USE_IMPERATIVE_HANDLE_PAGE',
+        hidden: false,
+        component: lazyLoadComponent('HooksPage', 'UseImperativeHandlePage'),
+      },
+    ],
+  },
+  {
+    path: '*',
+    name: 'Not Found Page',
+    keyName: 'NOT_FOUND_PAGE',
+    hidden: true,
+    component: lazyLoadComponent('404Page'),
+  },
 ];
 
 export default routes;

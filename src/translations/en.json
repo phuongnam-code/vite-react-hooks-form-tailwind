@@ -1,1 +1,11 @@
-{}
+{
+  "COMMON": {},
+  "ROUTES": {
+    "HOME_PAGE": "Home Page",
+    "FORM_PAGE": "Form Page",
+    "HOOKS_PAGE": "Hooks Page",
+    "USE_REF_PAGE": "Use Ref Page",
+    "USE_IMPERATIVE_HANDLE_PAGE": "Use Imperative Handle Page",
+    "NOT_FOUND_PAGE": "Not Found Page"
+  }
+}
