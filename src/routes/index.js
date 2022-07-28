@@ -45,6 +45,14 @@ const routes = [
     ],
   },
   {
+    path: '/iframe',
+    name: 'Iframe Page',
+    keyName: 'IFRAME_PAGE',
+    hidden: false,
+    component: lazyLoadComponent('IframePage'),
+    children: [],
+  },
+  {
     path: '*',
     name: 'Not Found Page',
     keyName: 'NOT_FOUND_PAGE',

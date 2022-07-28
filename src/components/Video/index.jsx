@@ -9,7 +9,7 @@ const Video = (props, ref) => {
 		pause: () => videoRef.current.pause(),
 	}));
 
-	return <video ref={videoRef} src={props.video || videoTest} width={480} />;
+	return <video ref={videoRef} src={props.video || videoTest} width={1280} />;
 };
 
 export default forwardRef(Video);
