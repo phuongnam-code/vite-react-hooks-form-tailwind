@@ -1,5 +1,5 @@
 import { LoadingSVG } from '@/assets/image/SVG';
-import classNames from '@/utils/classNames';
+import { classNames } from '@/utils';
 
 const Button = ({
 	type = 'submit', // 'submit' | 'reset' | 'button',

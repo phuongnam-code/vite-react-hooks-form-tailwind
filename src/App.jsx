@@ -6,8 +6,7 @@ import ErrorBoundaryPage from '@/pages/ErrorBoundaryPage';
 import HOCTranslated from '@/components/HOC/HOCTranslated';
 import Header from '@/components/Header';
 import routes from '@/routes';
-import uuid from '@/utils/uuid';
-import translation from '@/utils/translation';
+import { uuid, translation } from '@/utils';
 
 function App() {
 	const { t } = useTranslation();

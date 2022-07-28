@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import classNames from '@/utils/classNames';
+import { classNames } from '@/utils';
 
 const InputTel = ({ inputProps, classes, idFor, placeholder, isError, readOnly, disabled }) => {
 	const [inputValue, setInputValue] = useState('');

@@ -1,4 +1,4 @@
-import classNames from '@/utils/classNames';
+import { classNames } from '@/utils';
 
 const Textarea = ({ inputProps, classes, idFor, placeholder, rows = 4, cols = 5, isError, readOnly, disabled }) => {
 	return (

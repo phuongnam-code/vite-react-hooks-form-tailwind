@@ -1,7 +1,7 @@
 import { withTranslation } from 'react-i18next';
-import translation from '@/utils/translation';
+import { translation } from '@/utils';
 
-const HOCTranslated = ({ t, component: Component, ...props }) => {
+const Translated = ({ t, i18n, component: Component, ...props }) => {
 	const translator = (array, option) => {
 		return translation(t)(array, option);
 	};
@@ -9,4 +9,6 @@ const HOCTranslated = ({ t, component: Component, ...props }) => {
 	return <Component translator={translator} {...props} />;
 };
 
-export default withTranslation()(HOCTranslated);
+const HOCTranslated = withTranslation()(Translated);
+
+export default HOCTranslated;

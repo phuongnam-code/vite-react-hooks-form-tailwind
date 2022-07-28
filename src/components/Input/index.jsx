@@ -1,4 +1,4 @@
-import classNames from '@/utils/classNames';
+import { classNames } from '@/utils';
 
 const Input = ({ inputProps, classes, idFor, placeholder, isError, readOnly, disabled }) => {
 	return (
