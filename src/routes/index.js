@@ -53,6 +53,14 @@ const routes = [
     children: [],
   },
   {
+    path: '/search',
+    name: 'Search Page',
+    keyName: 'SEARCH_PAGE',
+    hidden: false,
+    component: lazyLoadComponent('SearchPage'),
+    children: [],
+  },
+  {
     path: '*',
     name: 'Not Found Page',
     keyName: 'NOT_FOUND_PAGE',
