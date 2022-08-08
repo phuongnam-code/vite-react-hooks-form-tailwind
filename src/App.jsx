@@ -35,7 +35,7 @@ function App() {
 
 	return (
 		<div className='App'>
-			<nav className='nav w-1/5'>
+			<nav className='nav w-1/5 p-2'>
 				{routes.map((route) => {
 					const { path, keyName, hidden } = route;
 					return (

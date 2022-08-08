@@ -53,6 +53,14 @@ const routes = [
     children: [],
   },
   {
+    path: '/date-time',
+    name: 'Date Time Page',
+    keyName: 'DATE_TIME_PAGE',
+    hidden: false,
+    component: lazyLoadComponent('DateTimePage'),
+    children: [],
+  },
+  {
     path: '/search',
     name: 'Search Page',
     keyName: 'SEARCH_PAGE',
