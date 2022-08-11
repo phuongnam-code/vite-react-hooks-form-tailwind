@@ -9,6 +9,7 @@
     "IFRAME_PAGE": "Iframe Page",
     "DATE_TIME_PAGE": "Date Time Page",
     "SEARCH_PAGE": "Search Page",
+    "DISABLE_DEVELOPER_TOOLS": "Disable Developer Tools",
     "NOT_FOUND_PAGE": "Not Found Page"
   }
 }

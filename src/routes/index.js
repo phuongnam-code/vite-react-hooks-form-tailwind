@@ -69,6 +69,14 @@ const routes = [
     children: [],
   },
   {
+    path: '/disable-developer-tools',
+    name: 'Disable Developer Tools',
+    keyName: 'DISABLE_DEVELOPER_TOOLS',
+    hidden: false,
+    component: lazyLoadComponent('DisableDeveloperTools'),
+    children: [],
+  },
+  {
     path: '*',
     name: 'Not Found Page',
     keyName: 'NOT_FOUND_PAGE',
