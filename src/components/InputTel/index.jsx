@@ -4,7 +4,7 @@ import { classNames } from '@/utils';
 const InputTel = ({ inputProps, classes, idFor, placeholder, isError, readOnly, disabled }) => {
 	const [inputValue, setInputValue] = useState('');
 	const handleChangeInput = (e) => {
-		let valueChange = e.target.validity.valid ? value.e.target : inputValue;
+		let valueChange = e.target.validity.valid ? e.target.value : inputValue;
 		setInputValue(valueChange);
 	};
 	return (
