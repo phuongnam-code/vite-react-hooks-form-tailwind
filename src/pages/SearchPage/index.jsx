@@ -18,16 +18,12 @@ const SearchPage = () => {
 	};
 
 	useEffect(() => {
-		getPosts();
-	}, []);
-
-	useEffect(() => {
 		getPosts(keyword);
 	}, [keyword]);
 
 	return (
 		<div>
-			<Search setKeyword={setKeyword} />
+			<Search setKeyword={setKeyword} placeholder='Enter id' />
 			<ul className='mt-4'>
 				{data.map((item) => (
 					<li key={item.id}>{'id: ' + item.id + ' - ' + item.title}</li>
