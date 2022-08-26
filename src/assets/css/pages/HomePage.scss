@@ -1,6 +1,5 @@
 .HomePage {
   margin: -12px;
-  text-align: center;
 
   .logo {
     height: 40vmin;
@@ -15,7 +14,7 @@
 
   .header {
     background-color: #282c34;
-    min-height: calc(100vh - 64px);
+    min-height: calc(100vh - 56px);
     display: flex;
     flex-direction: column;
     align-items: center;

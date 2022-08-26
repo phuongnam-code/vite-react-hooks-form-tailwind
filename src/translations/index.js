@@ -7,7 +7,7 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: 'en',
-    debug: process.env.NODE_ENV === "development",
+    debug: import.meta.env.MODE === 'development',
     resources: {
       en: { translation: translationEn },
       vi: { translation: translationVi },

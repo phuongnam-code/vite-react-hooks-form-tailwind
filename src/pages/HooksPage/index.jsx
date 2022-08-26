@@ -1,7 +1,7 @@
-import SwitchRoute from '@/components/SwitchRoute';
+import { Outlet } from 'react-router-dom';
 
-const index = ({ translator, routes }) => {
-	return <SwitchRoute translator={translator} routes={routes} />;
+const index = () => {
+	return <Outlet />;
 };
 
 export default index;

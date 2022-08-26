@@ -16,9 +16,9 @@ const IframePage = () => {
 
 	useEffect(() => {
 		if (objIframe.iframe) {
-			console.log(objIframe.iframe);
+			// console.log(objIframe.iframe);
 			const app = objIframe.iDocument.getElementById('app');
-			console.log(app);
+			// console.log(app);
 		}
 	}, [objIframe]);
 

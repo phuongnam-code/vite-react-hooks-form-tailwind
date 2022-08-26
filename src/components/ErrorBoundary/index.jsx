@@ -1,6 +1,6 @@
 import { Component } from 'react';
 
-class ErrorBoundaryPage extends Component {
+class ErrorBoundary extends Component {
 	constructor(props) {
 		super(props);
 		this.state = { error: null, errorInfo: null };
@@ -30,4 +30,4 @@ class ErrorBoundaryPage extends Component {
 	}
 }
 
-export default ErrorBoundaryPage;
+export default ErrorBoundary;

@@ -12,6 +12,19 @@
       text-decoration: none;
 
       &.active {
+        // color: blue;
+        font-weight: 800;
+      }
+    }
+  }
+
+  .sub-nav {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .sub-nav-link {
+      &.active {
         color: blue;
       }
     }
